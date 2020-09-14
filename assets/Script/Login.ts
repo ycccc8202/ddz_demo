@@ -49,8 +49,8 @@ export class Login extends cc.Component {
                         game.playerName = user;
                         game.roomNum = room;
                         // 跳转房间等候场景
-                        //cc.director.loadScene('waitingroom');
-                        this.node.addChild(loading.view_prefab);
+                        cc.director.loadScene('waitingroom');
+                        //this.node.addChild(loading.view_prefab);
                     }
                     else {
                         alert('房间已存在您可以加入游戏');
